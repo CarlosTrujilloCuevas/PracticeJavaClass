@@ -43,7 +43,7 @@ public class launcher {
 
     public static String createName() {
         String[] randomNames = {"Gladius", "Kinslayer", "Lifedrinker", "Treacherys Carver", "Fierce Carver", "Fortunes Gold Etcher", "Vowed Iron Spellblade", "Nightbane", "Cunning of the Banished", "Knightfall", "Etcher of the Harvest", "Faithkeeper", "Annihilation of Pride"};
-        int randomNum = createRandomNumber(13);
+        int randomNum = createRandomNumber(randomNames.length);
         return randomNames[randomNum];
     }
 
@@ -54,7 +54,7 @@ public class launcher {
 
     public static String createRandomAttribute() {
         String[] randomAttribute = {"Poison", "Dark", "Light", "Aqua", "Fire", "Earth", "Wind", "Ice", "Ghost", "Dragon", "Electric", "Metal"};
-        int randomNum = createRandomNumber(12);
+        int randomNum = createRandomNumber(randomAttribute.length);
         return randomAttribute[randomNum];
     }
 
@@ -108,5 +108,6 @@ public class launcher {
 
     public static String leyend() {
         String[] leyends = {""};
+        return null;
     }
 }
