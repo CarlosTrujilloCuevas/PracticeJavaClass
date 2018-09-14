@@ -1,6 +1,6 @@
 package Generador.Armas;
 
-public class ArmaCuerpoACuerpo extends Arma {
+public class ArmaCuerpoACuerpo extends ArmaPadre {
 
     Double multiplify;
 

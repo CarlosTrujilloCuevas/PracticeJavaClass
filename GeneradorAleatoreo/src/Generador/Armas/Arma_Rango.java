@@ -1,6 +1,6 @@
 package Generador.Armas;
 
-public class Arma_Rango extends Arma {
+public class Arma_Rango extends ArmaPadre {
 
     Double range;
 
