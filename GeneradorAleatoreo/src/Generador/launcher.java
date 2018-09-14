@@ -24,8 +24,7 @@ public class launcher {
             System.out.println(" 2 - Revisar entre las que tengo.");
             System.out.println(" 3 - Revisar todas las armas en inventario");
             System.out.println(" 4 - Eliminar un arma de mi inventario");
-            System.out.println(" 5 - Ordenar por Nivel de poder");
-            System.out.println(" 6 - Salir");
+            System.out.println(" 5 - Salir");
             System.out.print("----------Ingresar opcion : ");
             opcion = entrada.nextInt();
             switch (opcion) {
@@ -59,27 +58,11 @@ public class launcher {
                     }
                     break;
                 case 5:
-                    ordenarArreglo(nuevaArma.size());
+                    System.out.println("Adios ! ");
             }
 
         } while (true);
 
-    }
-
-    public static void ordenarArreglo(int a) {
-
-        for (int i = 0; i < a; i++) {
-            for (int j = 0; j < a; j++) {
-                ordenador1 = nuevaArma.get(i);
-                ordenador2 = nuevaArma.get(j);
-                if (ordenador2.getDamage() > ordenador1.getDamage()) {
-                    nuevaArma.set(i, ordenador2);
-                    nuevaArma.set((j), ordenador1);
-                }
-                System.out.println(ordenador1.getDamage() < ordenador2.getDamage());
-
-            }
-        }
     }
 
     public static void mostrarArmas(int index, int opcion) {
